@@ -12,11 +12,12 @@ Basic info about your main account on which you want to collect items
 ```
 {
   # These are the required parameters
+  "steam_api_key": "",
+  "trade_url": "main_trade_url",
+  # If you need auto accept trades
   "login": "main_login",
   "password": "main_password",
   "maFile": "your_main_maFile.maFile",
-  "steam_api_key": "",
-  "trade_url": "main_trade_url",
   # You do not need to fill in these parameters if you are not going to use autoclaim
   "telegram_bot_token": "",
   "telegram_chat_id": 0,
@@ -25,6 +26,7 @@ Basic info about your main account on which you want to collect items
 }
 ```
 Steam api key can be found at https://steamcommunity.com/dev/apikey
+
 ### accounts.txt file
 Fill this file with your accounts in the format `login password` (space separator).
 
@@ -46,7 +48,7 @@ You can do this by running `rename_mafiles.py` in the `utils` folder.
 ## About the bot
 After all the preparations above you can use the bot. 
 
-### claim_all.py
+### claim_all.py (accepts trades)
 This program will allow you to collect items from all accounts from the maFiles folder to the main one.
 
 The first time you use it, it will work slowly, since Steam does not allow you to log in to accounts more than once a minute.
@@ -57,6 +59,9 @@ On line 13, you can change or add the game you want to collect items from
 ```python
 games = [GameOptions.CS, ]
 ```
+
+### claim_without_accept.py (does not accept trades)
+The same as above, but you can not specify the data and the maFile from the main account.
 
 ### autoclaim.py
 This bot will help those who receive notifications in telegram about a new drop of items.
