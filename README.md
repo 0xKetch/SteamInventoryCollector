@@ -1,4 +1,4 @@
-# SteamInventoryClaim
+# Steam Inventory Collector
 Helps you to collect items from multiple accounts
    
 # Quick guide 
