@@ -1,0 +1,3 @@
+Your accounts list (including the main one where you want to collect items)
+login1 password1
+login2 password2

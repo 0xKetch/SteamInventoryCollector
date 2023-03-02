@@ -1,0 +1,11 @@
+{
+	"login": "main_login",
+	"password": "main_password",
+	"maFile": "your_main_maFile.maFile",
+	"steam_api_key": "",
+	"trade_url": "main_trade_url",
+	"telegram_bot_token": "",
+	"telegram_chat_id": 0,
+	"telegram_api_id": 0,
+	"telegram_api_hash": ""
+}
