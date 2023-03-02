@@ -88,3 +88,7 @@ An example for collecting all items from CS:GO, Dota2, Steam inventory:
 ```python
 games = [GameOptions.CS, GameOptions.DOTA2, GameOptions.STEAM]
 ```
+
+### Some problems
+
+If you get an JSONDecodeError when starting a programm try [this](https://github.com/bukson/steampy/issues/241) 
