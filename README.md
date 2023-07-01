@@ -94,8 +94,21 @@ An example for collecting all items from CS:GO, Dota2, Steam inventory:
 games = [GameOptions.CS, GameOptions.DOTA2, GameOptions.STEAM]
 ```
 
+### sale_recommendations_cards_farmer.py
+**To use this you have to use steampy from [my fork](https://github.com/0xKetch/steampy)**
+
+This script is needed to view the list of recommendations in automatic mode for all your accounts.
+
+During the Steam sale you can receive cards for this.
+
+Then you can collect your cards to one account with `claim_all.py`.
+
+The first time you use it, it will work slowly, since Steam does not allow you to log in to accounts more than once a minute.
+
+But after the first use, cookies from all accounts will be saved in the `cookies` folder, and the next use will be much faster.
+
 ### Some problems
 
 If you get an JSONDecodeError when starting a programm try [this](https://github.com/bukson/steampy/issues/241) 
 
-Or just copy library files from [my fork](https://github.com/KetchPRO/steampy)
+Or just copy library files from [my fork](https://github.com/0xKetch/steampy)
