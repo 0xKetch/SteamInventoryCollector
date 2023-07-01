@@ -46,7 +46,7 @@ def main():
                     client.login(login, password, mafile_path)
                     with open(f'cookies/{login}.pkl', 'wb') as pkl:
                         pickle.dump(client, pkl)
-                    time.sleep(45)
+                    time.sleep(50)
                 rec_queue = client.get_recommendations_queue()
                 if rec_queue.status_code != 200:
                     logger.warning(f'{login}: аккаунт еблан')

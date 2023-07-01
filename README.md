@@ -1,5 +1,5 @@
 # Steam Inventory Collector
-Helps you to collect items from multiple accounts
+Helps you to collect items from multiple accounts and farm steam sale cards (for watching recommendation list)
    
 # Quick guide 
 For using programs you need to install the necessary libraries.
